@@ -6,6 +6,10 @@
 .inner{position: relative; max-width: 940px; padding:0 20px; margin: 0 auto; padding-top: 48px; padding-bottom: 90px;}
 .con_wrap{width: 100%; background: #FFFFFF; border-radius: 10px; margin-bottom: 24px;}
 
+/* ========= input style */
+input[type='checkbox']{width: 14px; height: 14px; background: url(../images/checkbox_off.svg) no-repeat center; vertical-align: middle;}
+input[type='checkbox']:checked{background: url(../images/checkbox_on.svg) no-repeat center;}
+
 /* ========= login */
 .login_warp{padding: 0 40px; height: 681px; display: flex; justify-content: center; align-items: center;}
 .login_con{width: 100%; max-width: 295px;}
@@ -19,7 +23,7 @@
 .login_form .input_box.password{border-radius:  0px 0px 10px 10px; border-top: 0; margin-bottom: 10px;}
 
 .login_btn_box{display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px;}
-.login_btn_box input[type='checkbox']{width: 10px; height: 10px; border-radius: 2px; border: 1px solid #DDD; vertical-align: middle;} 
+
 .login_btn_box label{color: #777; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.56px; vertical-align: middle;}
 .login_btn_box button{color: #777; font-size: 14px; font-style: normal; font-weight: 500; line-height: normal; letter-spacing: -0.56px;}
 
