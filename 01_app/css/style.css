@@ -10,7 +10,7 @@
 input[type='checkbox']{width: 16px; height: 16px;border-radius: 3px;border: 1px solid #DDD;background: #FFF;vertical-align: middle;}
 input[type='checkbox']:checked{background: url(../images/checkbox_on.svg) no-repeat center;}
 input[type='text'],
-input[type='password']{width: 100%; border: 0; outline: 0; padding: 18px 16px;border-radius: 12px;border: 1px solid #E9E9E9;background: #FFF;}
+input[type='password']{width: 100%; font-size: 16px; border: 0; outline: 0; padding: 18px 16px;border-radius: 12px;border: 1px solid #E9E9E9;background: #FFF;}
 input::placeholder{color: #B4BBC9;font-size: 16px;font-weight: 400;letter-spacing: -0.64px;}
 input[type='text']:focus,
 input[type='password']:focus{border: 1px solid #3B3F47;}
@@ -22,9 +22,12 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .btn.primary{ background: #4157A5;}
 .btn.gray{background: #797D84;} 
 .btn:disabled{background: #CCC;}
+.btn_text{display: block; margin: 0 auto; color: #A4ABB7;text-align: center;font-size: 14px;font-weight: 500;line-height: 18px; /* 128.571% */letter-spacing: -0.56px;text-decoration-line: underline;}
 
 .btn_block{display: flex;align-items: center;}
 .btn_block.center{justify-content: center;}
+
+
 
 /* ========= modal style */
 .modal_overlay{display: none; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.60);}
@@ -41,11 +44,18 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .modal_footer{padding: 0 20px 20px 20px;}
 .modal_footer .btn_block{gap: 6px;}
 
+/* 로그인 토스트 팝업 */
+.login_toast_modal{width: 90%; position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); border-radius: 200px;background: rgba(0, 0, 0, 0.60);display: flex;padding: 16px 26px;justify-content: space-between;align-items: center; gap: 17px;}
+.login_toast_modal span{color: #FFF;font-size: 15px;font-weight: 400;line-height: 18px; /* 120% */letter-spacing: -0.15px;}
+
 /* ========= icon */
 [class*="icon_"] {display: inline-block; vertical-align: middle; background-repeat: no-repeat; background-position: 50%; background-size: cover;}
 .icon_close_bl{background: url(../images/icon-close-bl.svg)no-repeat center;}
+.icon_close_w{background: url(../images/icon-close-w.svg)no-repeat center;}
+
 
 /* ========= size */
+.size_16{width: 16px; height: 16px;}
 .size_24{width: 24px; height: 24px;}
 
 
@@ -66,6 +76,7 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 /* ========= 임시 비밀번호 발급 */
 .modal_dialog .modal_content.temporary_pw input[type='text']+input[type='text']{margin-top: 6px;} 
 .pw_issuance_email{padding: 12px;border-radius: 12px;background: #F5F7FA;font-weight: 500;font-size: 14px; color: #333; line-height: 24px;text-align: center;}
-
-
+.modal_dialog .modal_content.login_pw_email{padding-bottom: 30px;}
+.login_pw_email .btn_text{margin-top: 20px;}
+.login_toast_modal .close_modal .icon_close_w{background-size: 10px;}
 
