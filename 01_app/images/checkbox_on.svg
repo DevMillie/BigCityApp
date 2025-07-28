@@ -1,6 +1,3 @@
-<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group 90">
-<rect id="Rectangle 8" x="0.5" y="0.5" width="13" height="13" rx="2.5" fill="#4157A5" stroke="black"/>
-<path id="Vector 1" d="M4 6.77778L6.14286 9L10 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
+<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 4.26634L5.625 8.66634L12.5 1.33301" stroke="#4157A5" stroke-width="1.83333"/>
 </svg>
