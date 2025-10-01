@@ -9,8 +9,8 @@
 .admin_warp{position: relative; width: 100%; min-width: 1920px; display: flex; background: #fff; color: #333; letter-spacing: -0.64px;}
 .gnb_warp{width: 317px; height: 100vh; padding: 40px; }
 
-.contents_warp{position: relative; width: 100%; border-left: 1px solid #ddd;}
-footer{position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px 30px; background: rgba(65, 87, 165, .1); color: #999; font-size: 16px; font-weight: 500;}
+.contents_warp{position: relative;width: calc(100% - 317px); border-left: 1px solid #ddd;}
+footer{margin-left: 317px; position: absolute; bottom: 0; left: 0; width: calc(100% - 317px); padding: 20px 30px; background: rgba(65, 87, 165, .1); color: #999; font-size: 16px; font-weight: 500;}
 
 /* ========= input style */
 input[type='checkbox']{width: 16px; height: 16px;border-radius: 3px;border: 1px solid #DDD;background: #FFF;vertical-align: middle;}
@@ -63,6 +63,9 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .icon_close_bl{background: url(../images/icon-close-bl.svg)no-repeat center;}
 .icon_close_w{background: url(../images/icon-close-w.svg)no-repeat center;}
 
+/* ========= badge */
+.badge_new{height: 17px; vertical-align: middle; padding: 3px 5px; margin-right: 4px; display: inline-block; border-radius: 3px;background: #4157A5; color: #FFF;font-size: 10px;font-weight: 700;}
+
 
 /* ========= size */
 .size_16{width: 16px; height: 16px;}
@@ -95,18 +98,19 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .gnb_warp .logo_area img{width: 217px;}
 .gnb_warp .gnb li a{display: inline-block; width: 100%; font-size: 16px; font-weight: 500; letter-spacing: -0.64px; padding: 14px 20px;}
 .gnb_warp .gnb .home a{color: #4157A5; font-weight: 700; }
-.gnb_warp .gnb .home.active a{border-radius: 10px;background: rgba(65, 87, 165, .1); color: #4157A5; font-weight: 700;}
+.gnb_warp .gnb .home.on a{border-radius: 10px;background: rgba(65, 87, 165, .1); color: #4157A5; font-weight: 700;}
 .gnb_warp .gnb li:has(.depth2) > a{background: url(../images/icon_arrow_down.svg) no-repeat right 20px center;}
-.gnb_warp .gnb li.active:has(.depth2) > a{background: url(../images/icon_arrow_up.svg) no-repeat right 20px center;}
+.gnb_warp .gnb li:has(.depth2) > a.active{background: url(../images/icon_arrow_up.svg) no-repeat right 20px center;}
 
 .gnb_warp .gnb li .depth2{display: none; padding-left: 20px;}
-.gnb_warp .gnb li.active .depth2{display: block;}
+.gnb_warp .gnb li:has(a.active) .depth2{display: block;}
 .gnb_warp .gnb li .depth2 li a{padding: 14px 20px; color: #999;}
 .gnb_warp .gnb li .depth2 li.on a{border-radius: 10px;background: rgba(65, 87, 165, .1); color: #4157A5; font-weight: 700;}
 
 /* ========= main */
 #main .contents{width: 100%; padding: 40px;}
 #main .contents h2{margin-bottom: 30px;}
+#main .contents .volunteers_status{margin-bottom: 40px;} 
 #main .contents .volunteers_status h2 .status_date{padding-left: 10px; color: #AAA;font-size: 16px;font-weight: 700;letter-spacing: -0.64px;}
 #main .contents .volunteers_status .vs_list{display: flex;}
 #main .contents .volunteers_status .vs_list li{width: 237px; border-radius: 10px; background: rgba(65, 87, 165, .1); text-align: center; padding: 40px;}
@@ -115,14 +119,32 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 #main .contents .volunteers_status .vs_list li span{font-size: 30px;font-weight: 700;letter-spacing: -1.2px;}
 #main .contents .volunteers_status .vs_list li:first-child{background: #4157A5; color: #fff;}
 
+#main .contents .content_area{padding: 30px; border-radius: 10px; border: 1px solid #DDD;}
 
+#main .contents .vs_con_area{display: flex;}
+#main .volunteer_reporting{margin-right: 20px;}
+#main .volunteer_reporting .content_area {height: 368px;}
+#main .volunteer_reporting .content_area .main_tab{margin-bottom: 20px;}
+#main .volunteer_reporting .content_area .main_tab button{position: relative; margin-right: 23px; color: #AAA;font-size: 16px;font-weight: 500;}
+#main .volunteer_reporting .content_area .main_tab button::after{content: ''; position: absolute; left: -14px; top: 50%; display: block; width: 3px; height: 3px; background: #ddd;}
+#main .volunteer_reporting .content_area .main_tab button:first-child::after{display: none;}
+#main .volunteer_reporting .content_area .main_tab button.active{color: #333; font-weight: 700;}
+#main .volunteer_reporting .content_area .tab_content{display: none;} 
+#main .volunteer_reporting .content_area .tab_content ul li{width: 437px; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #eee;}
+#main .volunteer_reporting .content_area .tab_content ul li:last-child{border-bottom: 0; padding-bottom: 0;}
+#main .volunteer_reporting .content_area .tab_content ul li .reporting_title{font-weight: 700;}
 
-
-
-
-
-
-
+#main .main_notice h2{display: flex; justify-content: space-between;}
+#main .main_notice h2 button{color: #4157A5; font-size: 16px; font-weight: 700;}
+#main .main_notice .content_area{height: 368px;}
+#main .main_notice ul{width: 946px;}
+#main .main_notice ul li{border-bottom: 1px solid #eee;}
+#main .main_notice ul li:last-child{border-bottom: 0;}
+#main .main_notice ul li a{display: inline-block; padding: 20px 0; width: 100%;}
+#main .main_notice ul li:first-child a{padding-top: 0;}
+#main .main_notice ul li:last-child a{padding-bottom: 0;}
+#main .main_notice ul li a p{color: #AAA;}
+#main .main_notice ul li a .notice_title{font-weight: 700; margin-bottom: 10px; color: #333;}
 
 
 

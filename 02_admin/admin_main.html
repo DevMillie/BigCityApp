@@ -11,12 +11,13 @@
 </head>
 <body>
    <div id="main" class="admin_warp">
+      <!-- GNB S -->
       <div class="gnb_warp">
          <div class="logo_area">
             <img src="../02_admin/images/admin_logo.png" alt="어드민 로고">
          </div>
          <ul class="gnb">
-            <li class="home active"><a href="#">홈</a></li>
+            <li class="home on"><a href="#">홈</a></li>
             <li>
                <a href="#">순회구 관리</a>
                <ul class="depth2">
@@ -80,8 +81,11 @@
             </li>
          </ul>
       </div>
+      <!--// GNB E -->
+      <!-- contents_warp S -->
       <div class="contents_warp">
          <div class="contents">
+            <!-- 봉사자 현황 S -->
             <div class="volunteers_status">
                <h2 class="title_content">봉사자 현황 <span class="status_date">(2025.04.25)</span></h2>
                <ul class="vs_list">
@@ -107,11 +111,190 @@
                   </li>
                </ul>
             </div> 
+            <!-- // 봉사자 현황 E -->
+            <div class="vs_con_area">
+               <!-- 봉사보고 현황 S -->
+               <div class="volunteer_reporting">
+                  <h2 class="title_content">봉사보고 현황</h2>
+                  <div class="content_area">
+                      <!-- main_tab S -->
+                     <div class="main_tab">
+                        <button class="tab_links active" onclick="openCity(event, 'tab1')">이번달</button>
+                        <button class="tab_links" onclick="openCity(event, 'tab2')">연간</button>
+                        <button class="tab_links" onclick="openCity(event, 'tab3')">누적</button>
+                     </div>
+                      <!--// main_tab E -->
+                     <!-- tab_content S -->
+                     <div id="tab1" class="tab_content" style="display: block;">
+                        <ul>
+                           <li>
+                              <span class="reporting_title">전체 봉사자 수</span>
+                              <span>18,005 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">신규 봉사자 수</span>
+                              <span>52 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">출판물 수</span>
+                              <span>215 부</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">보여준 동영상 수</span>
+                              <span>6 건</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">방문 요청 수</span>
+                              <span>11 건</span>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="tab2" class="tab_content">
+                        <ul>
+                           <li>
+                              <span class="reporting_title">전체 봉사자 수</span>
+                              <span>318,005 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">신규 봉사자 수</span>
+                              <span>152 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">출판물 수</span>
+                              <span>4,215 부</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">보여준 동영상 수</span>
+                              <span>76 건</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">방문 요청 수</span>
+                              <span>811 건</span>
+                           </li>
+                        </ul>
+                     </div>
+
+                     <div id="tab3" class="tab_content">
+                        <ul>
+                           <li>
+                              <span class="reporting_title">전체 봉사자 수</span>
+                              <span>918,005 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">신규 봉사자 수</span>
+                              <span>652 명</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">출판물 수</span>
+                              <span>9,215 부</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">보여준 동영상 수</span>
+                              <span>546 건</span>
+                           </li>
+                           <li>
+                              <span class="reporting_title">방문 요청 수</span>
+                              <span>5,811 건</span>
+                           </li>
+                        </ul>
+                     </div>
+                     <!--// tab_content E -->
+
+                  </div>
+               </div>
+               <!--// 봉사보고 현황 E -->
+               <!-- 공지사항 S -->
+               <div class="main_notice">
+                  <h2 class="title_content"><span>공지사항</span> <button>전체보기</button></h2>
+                  <div class="content_area">
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p class="notice_title">
+                                <span class="badge_new">NEW</span> 5개 순회구 대도시 앱이 하나로 통합됩니다.
+                              </p>
+                              <p>2025.04.25</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p class="notice_title">
+                                 5개 순회구 대도시 앱이 하나로 통합됩니다.
+                              </p>
+                              <p>2025.04.25</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p class="notice_title">
+                                 5개 순회구 대도시 앱이 하나로 통합됩니다.
+                              </p>
+                              <p>2025.04.25</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p class="notice_title">
+                                 5개 순회구 대도시 앱이 하나로 통합됩니다.
+                              </p>
+                              <p>2025.04.25</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <!--// 공지사항 E -->
+            </div>
          </div>
-         <footer>
-            <span>Copyright © 여호와의 증인 대도시 특별 공개 증거. All rights reserved.</span>
-         </footer>
+        
       </div>
+      <!--// contents_warp E --> 
+      <footer>
+         <span>Copyright © 여호와의 증인 대도시 특별 공개 증거. All rights reserved.</span>
+      </footer>
    </div>
+
+   <script>
+      function openCity(evt, cityName) {
+         // Declare all variables
+         var i, tabcontent, tablinks;
+
+         // Get all elements with class="tabcontent" and hide them
+         tabcontent = document.getElementsByClassName("tab_content");
+         for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+         }
+
+         // Get all elements with class="tablinks" and remove the class "active"
+         tablinks = document.getElementsByClassName("tab_links");
+         for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+         }
+
+         // Show the current tab, and add an "active" class to the button that opened the tab
+         document.getElementById(cityName).style.display = "block";
+         evt.currentTarget.className += " active";
+         }
+
+
+      // $(".gnb > li > a").click(function() {
+      //    $(this).next(".depth2").stop().slideToggle(300);
+      //    $(this).toggleClass('active').siblings().removeClass('active');
+      //    $(this).next(".depth2").siblings(".depth2").slideUp(300); // 1개씩 펼치기
+      // });
+
+
+      $(document).ready(function(){
+         $('.gnb > li > a').on('click', function(){
+            // 모든 .item 클래스에서 'active' 클래스 제거
+            $('.gnb > li > a').removeClass('active');
+            
+            // 클릭된 요소에만 'active' 클래스 추가
+            $(this).addClass('active');
+         });
+      });
+
+   </script>
 </body>
 </html>
