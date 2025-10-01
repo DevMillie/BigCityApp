@@ -84,7 +84,21 @@
       <!--// GNB E -->
       <!-- contents_warp S -->
       <div class="contents_warp">
+         <!-- info_dropdown S -->
+         <div class="info_dropdown">
+            <button>
+               <img src="../02_admin/images/login_img.png" alt="">
+               <span>시스템 관리자 님</span>
+            </button>
+            <ul>
+               <li><a href="#">비밀번호 초기화</a></li>
+               <li><a href="#">전화번호 변경</a></li>
+               <li class="logout"><a href="#">로그아웃</a></li>
+            </ul>
+         </div>
+         <!-- info_dropdown E -->
          <div class="contents">
+            
             <!-- 봉사자 현황 S -->
             <div class="volunteers_status">
                <h2 class="title_content">봉사자 현황 <span class="status_date">(2025.04.25)</span></h2>
@@ -276,24 +290,6 @@
          document.getElementById(cityName).style.display = "block";
          evt.currentTarget.className += " active";
          }
-
-
-      // $(".gnb > li > a").click(function() {
-      //    $(this).next(".depth2").stop().slideToggle(300);
-      //    $(this).toggleClass('active').siblings().removeClass('active');
-      //    $(this).next(".depth2").siblings(".depth2").slideUp(300); // 1개씩 펼치기
-      // });
-
-
-      $(document).ready(function(){
-         $('.gnb > li > a').on('click', function(){
-            // 모든 .item 클래스에서 'active' 클래스 제거
-            $('.gnb > li > a').removeClass('active');
-            
-            // 클릭된 요소에만 'active' 클래스 추가
-            $(this).addClass('active');
-         });
-      });
 
    </script>
 </body>

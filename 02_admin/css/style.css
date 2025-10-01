@@ -107,6 +107,20 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .gnb_warp .gnb li .depth2 li a{padding: 14px 20px; color: #999;}
 .gnb_warp .gnb li .depth2 li.on a{border-radius: 10px;background: rgba(65, 87, 165, .1); color: #4157A5; font-weight: 700;}
 
+/* info_dropdown */
+.info_dropdown{position: absolute; top: 40px; right: 40px; display: inline-block;}
+.info_dropdown::after{content: ''; position: relative;}
+.info_dropdown button{display: flex; align-items: center;}
+.info_dropdown button img{width: 40px; height: 40px; margin-right: 10px;}
+.info_dropdown button span{color: #000;font-size: 16px;font-weight: 600; padding-right: 16px; background: url(../images/icon_arrow_down.svg)no-repeat right center;}
+
+.info_dropdown ul{display: none; position: absolute; bottom: -119px; right: 0; padding: 15px 20px; border-radius: 10px; background: #FFF; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);}
+.info_dropdown ul.active{display: block;}
+.info_dropdown ul li{text-align: center;}
+.info_dropdown ul li + li{margin-top: 15px;}
+.info_dropdown ul li a{color: #333;text-align: center;font-size: 16px;font-weight: 500;}
+.info_dropdown ul .logout a{color: #FA6464;}
+
 /* ========= main */
 #main .contents{width: 100%; padding: 40px;}
 #main .contents h2{margin-bottom: 30px;}
