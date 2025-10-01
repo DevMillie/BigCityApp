@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<title>대도시앱 admin IA</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<style src="./fonts/pretendard.css"></style>
+	<style type="text/css">
+		body,
+		input,
+		select,
+		textarea,
+		button {
+			font-family: 'pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+			color: #000;
+			font-size: 14px;
+			line-height: 1.6;
+			font-weight: 500;
+		}
+
+		pre {
+			font-family: 'pretendard', 'Malgun Gothic', '맑은 고딕', sans-serif;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			word-break: break-all;
+		}
+
+		textarea {
+			resize: none;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			color: inherit;
+			font-weight: normal;
+		}
+
+		ul,
+		ol {
+			list-style: none;
+		}
+
+		blockquote,
+		q {
+			quotes: none;
+		}
+
+		blockquote:before,
+		blockquote:after,
+		q:before,
+		q:after {
+			content: '';
+			content: none;
+		}
+
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+
+		a,
+		a:hover {
+			color: #212121;
+			text-decoration: none;
+			cursor: pointer;
+			-webkit-transition: all 200ms ease-in-out;
+			-moz-transition: all 200ms ease-in-out;
+			-o-transition: all 200ms ease-in-out;
+			transition: all 200ms ease-in-out
+		}
+
+		*,
+		*:after,
+		*:before {
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+		}
+
+		caption,
+		legend,
+		.blind,
+		.hidden,
+		h2 {
+			visibility: hidden;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 0;
+			font-size: 0;
+			line-height: 0;
+		}
+
+		hr {
+			display: none;
+		}
+
+		.wrap {
+			margin: 0 auto;
+			padding: 30px;
+		}
+
+		h1 {
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+
+		/* tab */
+		.tab ul {
+			margin-bottom: 20px;
+		}
+
+		.tab ul:after {
+			display: block;
+			clear: both;
+			content: ''
+		}
+
+		.tab li {
+			float: left;
+			list-style: none;
+			min-width: 120px;
+		}
+
+		.tab li a {
+			display: block;
+			background: #2b2171;
+			padding: 7px 20px;
+			border-right: 1px solid #d9e0e7;
+			border-bottom: 1px solid #d9e0e7;
+			color: #fff;
+			text-align: center;
+			font-weight: bold;
+			cursor: text;
+		}
+
+		.tab li.ui-tabs-active a {
+			background: #0068FF;
+		}
+
+		.noticebox {
+			margin: 20px 0;
+			padding: 20px;
+			background: #f6f6f6;
+			border: 1px solid #e1e1e1;
+		}
+
+		/* tbl contents */
+		.tbl {
+			width: 100%;
+			border: 0;
+			border-top: 2px solid #555;
+			border-bottom: 1px solid #e1e1e1;
+			font-size: 13px;
+			border-collapse: collapse;
+			table-layout: fixed;
+			margin-bottom: 50px;
+		}
+
+		.tbl thead th {
+			background: #f6f6f6;
+		}
+
+		.tbl thead th:last-child {
+			border-right: 0;
+		}
+
+		.tbl thead th {
+			background: #f0f0f0;
+			border: 1px solid #ccc;
+		}
+
+		.tbl th {
+			color: #444;
+			border: 1px solid #e1e1e1;
+			background: #f6f6f6;
+		}
+
+		.tbl tr:first-child th {
+			border-top: none;
+		}
+
+		.tbl th:first-child {
+			border-left: none
+		}
+
+		.tbl th,
+		.tbl td {
+			padding: 8px 5px;
+			text-align: center;
+		}
+
+		.tbl tbody tr:hover td {
+			background: #E7EFFF;
+		}
+
+		.tbl td {
+			border: 0;
+			border-bottom: 1px solid #e1e1e1;
+			border-left: 1px solid #e1e1e1;
+		}
+
+		.tbl .cate th,
+		.tbl .cate td {
+			border-top: 2px solid #555 !important;
+		}
+
+		.tbl [class*="depth"] {
+			text-align: left;
+		}
+
+		.link {
+			text-decoration: underline;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<h1>대도시앱 admin IA</h1>
+		<div class="noticebox">
+			<ul>
+				<li><strong>구분 : </strong>ⓟ - POPUP</li>
+			</ul>
+		</div>
+
+		<div class="tab">
+			<ul>
+				<li><a href="#tab1">관리자 페이지 Ver 2.0</a></li>
+			</ul>
+			<div id="tab1">
+				<table class="tbl">
+					<caption>페이지 리스트</caption>
+					<colgroup>
+						<col style="width:3%">
+						<col style="width:5%">
+						<col style="">
+						<col style="">
+						<col>
+						<col>
+						<col style="">
+						<col style="">
+						<col>
+						<col style="width:5%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">구분</th>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col">4depth</th>
+							<th scope="col">파일명(바로가기)</th>						
+							<th scope="col">완료</th>
+							<th scope="col">비고</th>
+							<th scope="col">validation</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2"></td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login.html" target="_blank">login.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2">임시 비밀번호 발급ⓟ</td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login_temporary_pw.html" target="_blank">login_temporary_pw.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2">임시 비밀번호 발급 완료ⓟ</td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login_pw_issuance.html" target="_blank">login_pw_issuance.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2">이메일 정보 확인 불가ⓟ</td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login_pw_email.html" target="_blank">login_pw_email.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2">핸드폰 임시 비밀번호 발급ⓟ</td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login_pw_phone.html" target="_blank">login_pw_phone.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>로그인</td>
+							<td class="depth1">로그인</td>
+							<td class="depth2">로그인 알림 팝업ⓟ</td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="login_toast_popup.html" target="_blank">login_toast_popup.html</a></td>
+							<td class="date">O</td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						<tr id="loc_tr">
+							<th></th>
+							<td>홈</td>
+							<td class="depth1">관리자 메인</td>
+							<td class="depth2"></td>
+							<td class="depth3"></td>
+							<td class="depth4"></td>
+							<td class="link"><a href="admin_main.html" target="_blank">admin_main.html</a></td>
+							<td class="date"></td>
+							<td class="etc"></td>
+							<td></td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div><!-- //wrap -->
+		<script>
+			// use >> <a href=# onclick=pop('./x.html','','767','1000','y');>[열기]</a>
+			var pop = function (html_uri, pop_up_name, option_width, option_height, option_selection) {
+				var popupObject = null;
+				var option = "width=" + option_width + ","
+				option += "height=" + option_height + ","
+				option += "left=" + (screen.width - option_width) / 2 + ","
+				option += "top=" + (screen.height - option_height) / 2 + ",";
+
+
+				if (option_selection == 'yes' || option_selection == 'y') {
+					option += 'fullscreen=no, location=no, scrollbars=yes, menubar=no, toolbar=no, titlebar=no, directories=no, resizable=yes';
+				} else if (option_selection == 'no' || option_selection == 'n') {
+					option += 'fullscreen=no, location=no, scrollbars=no, menubar=no, toolbar=no, titlebar=no, directories=no, resizable=no';
+				} else {
+					option += option_selection;
+				}
+				popupObject = window.open(html_uri, pop_up_name, option);
+			}
+			$('.tab').tabs();
+			$('.tbl tbody th').each(function (index) {
+				$(this).text(index + 1);
+			});
+		</script>
+</body>
+
+</html>
