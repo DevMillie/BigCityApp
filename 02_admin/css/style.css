@@ -56,6 +56,10 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .pagination .numbering li a:hover{background: #F9F9F9;}
 .pagination .numbering li a.active{background: #ECEEF6; color: #4157A5;}
 
+/* datepicker */
+input[type='text'].datepicker-here{padding: 15px 20px; border-radius: 5px; border: 1px solid #EEE; background: url(../images/icon_date.svg) no-repeat right 20px top 18px; color: #333; font-size: 16px; font-weight: 500; font-family: 'pretendard', '맑은고딕', Arial, Dotum, sans-serif; line-height: 18px; letter-spacing: -0.64px; width: 200px;}
+.date_gap{padding: 0 12px;}
+
 /* ========= button style */
 .btn{width: 100%; border-radius: 10px; color: #fff; vertical-align: middle; font-weight: 700;}
 .btn.large{height: 43px; font-size: 16px; letter-spacing: -0.16px;}
@@ -206,3 +210,5 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 
 /* ========= table_area */
 .table_area{width: 100%; border-radius: 10px; border: 1px solid #DDD; padding: 30px; margin-bottom: 30px; min-height: 679px;}
+
+.table_area.min_h_none{min-height: auto;}
