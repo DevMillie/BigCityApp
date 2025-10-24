@@ -201,6 +201,9 @@ input[type='text'].datepicker-here{padding: 15px 20px; border-radius: 5px; borde
 
 .search_area.with_btn{justify-content: space-between;}
 
+.search_area input[type=text]{width: 200px; border-radius: 5px; padding: 15px 20px;}
+.search_area .btn_admin{width: 85px; border-radius: 5px;}
+
 .form_group_box{display: flex; align-items: center; gap: 20px 30px;}
 
 .search_area .form_group label{color: #333;font-size: 16px;font-weight: 700;letter-spacing: -0.64px; margin-right: 15px;}
@@ -211,8 +214,6 @@ input[type='text'].datepicker-here{padding: 15px 20px; border-radius: 5px; borde
 .form_group.sc_group .sc_text input[type=text]{border: none; padding: 0; width: 100%;}
 .form_group.sc_group .sc_text button{margin-left: 10px;}
 
-.search_area input[type=text]{width: 200px; border-radius: 5px; padding: 15px 20px;}
-.search_area .btn_admin{width: 85px; border-radius: 5px;}
 
 /* ========= table_area */
 .table_area{width: 100%; border-radius: 10px; border: 1px solid #DDD; padding: 30px; margin-bottom: 30px; min-height: 679px;}
