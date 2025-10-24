@@ -29,10 +29,10 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 
 /* ========= table style */
 .tb_01{width: 100%;}
-.tb_01 tr th{padding: 15px; color: #4157A5;text-align: center;font-size: 16px;font-weight: 700;letter-spacing: -0.64px; background: #ECEEF6;}
+.tb_01 tr th{height: 48px; padding: 15px; color: #4157A5;text-align: center;font-size: 16px;font-weight: 700;letter-spacing: -0.64px; background: #ECEEF6;}
 .tb_01 tr th:first-child{border-radius: 5px 0 0 5px;}
 .tb_01 tr th:last-child{border-radius: 0 5px 5px 0;}
-.tb_01 tr td{padding: 15px; color: #333;text-align: center;font-size: 16px;font-weight: 500;letter-spacing: -0.64px;}
+.tb_01 tr td{height: 48px; padding: 15px; color: #333;text-align: center;font-size: 16px;font-weight: 500;letter-spacing: -0.64px;}
 
 .tb_01 tbody tr:hover{background: #F9F9F9;}
 

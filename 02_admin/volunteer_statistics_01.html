@@ -65,18 +65,18 @@
                </ul>
             </li>
             <li>
-               <a href="#">봉사기록 통계</a>
+               <a href="#" class="active">봉사기록 통계</a>
                <ul class="depth2">
-                  <li><a href="#">봉사자</a></li>
+                  <li class="on"><a href="#">봉사자</a></li>
                   <li><a href="#">월 별 봉사자</a></li>
                   <li><a href="#">봉사보고</a></li>
                   <li><a href="#">출판물</a></li>
                </ul>
             </li>
             <li>
-               <a href="#" class="active">게시판 관리</a>
+               <a href="#">게시판 관리</a>
                <ul class="depth2">
-                  <li class="on"><a href="#">공지사항</a></li>
+                  <li><a href="#">공지사항</a></li>
                   <li><a href="#">푸쉬 알림 보내기</a></li>
                   <li><a href="#">문의사항 답변하기</a></li>
                </ul>
@@ -101,7 +101,7 @@
          <!-- info_dropdown E -->
          <div class="contents">
 
-            <h2 class="title_content">공지사항</h2>
+            <h2 class="title_content">봉사자 통계</h2>
             <!-- search_area S -->
             <div class="search_area">
                <div class="form_group">
@@ -111,20 +111,14 @@
                   </select>
                </div>
                <div class="form_group">
-                  <label for="">지역</label>
-                  <select name="" id="" class="select">
-                     <option value="">전체</option>
-                  </select>
-               </div>
-               <div class="form_group">
-                  <label for="">대상</label>
+                  <label for="">집계 조건</label>
                   <select name="" id="" class="select">
                      <option value="">전체</option>
                   </select>
                </div>
                <div class="form_group sc_group">
                   <label for="">검색</label>
-                  <div class="sc_text">
+                  <div class="sc_text"> 
                      <input type="text" placeholder="검색어를 입력하세요">
                      <button>
                         <img src="../02_admin/images/icon_search.svg" alt="">
@@ -140,12 +134,14 @@
                      <tr>
                         <th>No</th>
                         <th>도시</th>
-                        <th>지역 (순회구)</th>
-                        <th>열람 대상</th>
-                        <th>제목</th>
-                        <th>작성자</th>
-                        <th>조회수</th>
-                        <th>작성 일자</th>
+                        <th>지역</th>
+                        <th>회중</th>
+                        <th>형제</th>
+                        <th>자매</th>
+                        <th>정규</th>
+                        <th>고정 봉사자</th>
+                        <th>1년 내 참여자</th>
+                        <th>장기 미참여자</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -153,132 +149,146 @@
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
                      </tr>
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
-                     </tr>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
+                     </tr>     
                      <tr>
                         <td>738</td>
                         <td>부산</td>
                         <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
+                        <td>-</td>
+                        <td>202</td>
+                        <td>122</td>
                         <td>103</td>
-                        <td>2025.04.10</td>
-                     </tr>
-                     <tr>
-                        <td>738</td>
-                        <td>부산</td>
-                        <td>지역 10</td>
-                        <td>봉사자 전체</td>
-                        <td>2025 부안 마실 축제 & 군산 은파 유원지 순특공 안내</td>
-                        <td>김보람</td>
-                        <td>103</td>
-                        <td>2025.04.10</td>
-                     </tr>
+                        <td>22</td>
+                        <td>3</td>
+                        <td>1</td>
+                     </tr>                
                   </tbody>
                </table>
             </div>
@@ -305,7 +315,7 @@
                   <button class="btn_last"></button>
                </div>
                <!--// pagination E -->
-               <button class="btn_admin blue">공지사항 등록</button>
+               <button class="btn_admin white">엑셀 다운로드</button>
             </div>
             <!--// pagination_area E -->
 
