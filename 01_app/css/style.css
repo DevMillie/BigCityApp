@@ -1,10 +1,10 @@
 @import url('reset.css');
 
+.app_body {background: #eee;}
+
 /* ========= common */
-.wrap{position: relative; width: 100%;}
-.container{position: relative; width: 100%; padding-top: 80px; background: #F0F2F5;}
-.inner{position: relative; max-width: 940px; padding:0 20px; margin: 0 auto; padding-top: 48px; padding-bottom: 90px;}
-.con_wrap{width: 100%; background: #FFFFFF; border-radius: 10px; margin-bottom: 24px;}
+.wrap{width: 100%; height: 100%; max-width: 640px; margin: 0 auto; overflow: hidden; position: relative;}
+.contents{width: 100%; height: 100%; padding-top: 76px; padding-bottom: 64px; background: #FFF; overflow-y: auto;}
 
 /* ========= input style */
 input[type='checkbox']{width: 16px; height: 16px;border-radius: 3px;border: 1px solid #DDD;background: #FFF;vertical-align: middle;}
@@ -27,6 +27,15 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .btn_block{display: flex;align-items: center;}
 .btn_block.center{justify-content: center;}
 
+.btn_today{border-radius: 8px; background: #F1F1F1; height: 30px; padding: 4px 12px; font-size: 14px; font-weight: 500;letter-spacing: -0.56px; color: #222;}
+
+/* ========= tab style */
+.time_tab{width: 74px; display: flex; gap: 6px; padding: 2px; border-radius: 60px; background: #F1F1F1;}
+.time_tab button{text-indent: -10000000px; width: 32px; height: 32px; border-radius: 50%;}
+.time_tab button.tab_list{background:url(../images/icon_tab_off.svg) no-repeat center;}
+.time_tab button.tab_list.active{background:url(../images/icon_tab_on.svg) no-repeat center; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.10));}
+.time_tab button.tab_calendar{background:url(../images/icon_date_off.svg) no-repeat center;}
+.time_tab button.tab_calendar.active{background:url(../images/icon_date_on.svg) no-repeat center; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.10));}
 
 
 /* ========= modal style */
@@ -79,4 +88,33 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .modal_dialog .modal_content.login_pw_email{padding-bottom: 30px;}
 .login_pw_email .btn_text{margin-top: 20px;}
 .login_toast_modal .close_modal .icon_close_w{background-size: 10px;}
+
+/* ========= header */
+header{width: 100%; background: #4157A5;position: absolute; top: 0; left: 0;}
+header .header_info{display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;}
+header .user_info{color: #FFF;}
+header .user_info .user_badge{padding: 4px 8px; margin-right: 8px; border-radius:40px; background: #112A84; font-size: 12px; font-weight: 600; letter-spacing: -0.36px;}
+header .user_info .user_name{font-size: 14px; font-weight: 400; letter-spacing: -0.28px;}
+header .user_info .user_name strong{padding-right: 3px; font-size: 15px;font-weight: 700;}
+header .user_img{width: 36px; height: 36px; border-radius: 50%; background: #FFF url(../images/icon_photo_none.svg) no-repeat center; overflow: hidden;}
+header .header_bottom{width: 100%; height: 16px; border-radius: 16px 16px 0 0; background: #fff;}
+
+/* ========= 내 일정 */
+.top_link{width: 100%; display: flex; gap: 8px; padding: 0 16px 14px 16px; border-bottom: 1px solid #F0F0F0; margin-bottom: 24px;}
+.top_link a{display: inline-block; width: 25%; padding: 0 10px;}
+.top_link a img{width: 20px; height: 20px; margin-bottom: 8px;}
+.top_link a p{color: #000;font-size: 14px;font-weight: 600;}
+.top_link a span{color: #757575;font-size: 13px;font-weight: 400;letter-spacing: -0.5px;}
+.top_link a span strong{color: #4157A5; font-weight: 500;}
+
+.today_wrap .control_box .date_control{display: flex; align-items: center; justify-content: space-between; padding: 0 16px 18px 16px;}
+.today_wrap .control_box .date_control .date_info{display: flex; gap: 18px; align-items: center; justify-content: space-between;}
+.today_wrap .control_box .date_control .date_info button{width: 24px; height: 24px;}
+.today_wrap .control_box .date_control .date_info span{font-size: 18px;font-weight: 700; color: #202020;}
+
+.time_control{display: flex; align-items: center; justify-content: space-between; padding: 0 16px 24px 16px;}
+.time_control .time_info{display: flex; align-items: center; gap:6px; color: #757575; font-size: 14px;font-weight: 400;letter-spacing: -0.56px;}
+.time_control .time_info strong{color: #222; font-weight: 600;}
+.time_control .time_info img{width: 20px; height: 20px;}
+
 
