@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>대도시앱</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/common.js"></script>
+</head>
+
+<body class="app_body">
+   <div class="wrap">
+      <!-- header S -->
+      <header>
+         <div class="header_info">
+            <div class="user_info">
+               <span class="user_badge">자원봉사자</span>
+               <span class="user_name"><strong>김아영 자매</strong> 서울수서 회중</span>
+            </div>
+            <div class="user_img">
+
+            </div>
+         </div>
+         <div class="header_bottom"></div>
+      </header>
+      <!--// header E -->
+      <!-- contents S -->
+      <div class="contents">
+         <!-- top_link S -->
+         <div class="top_link">
+            <a href="#">
+               <img src="../01_app/images/icon_calendar.svg" alt="">
+               <p>일정</p>
+               <span>예정 <strong>0</strong>건</span>
+            </a>
+            <a href="#">
+               <img src="../01_app/images/icon_book.svg" alt="">
+               <p>보고</p>
+               <span>미보고 <strong>0</strong>건</span>
+            </a>
+            <a href="#">
+               <img src="../01_app/images/icon_notification.svg" alt="">
+               <p>공지</p>
+               <span>새 항목 <strong>0</strong>건</span>
+            </a>
+            <a href="#">
+               <img src="../01_app/images/icon_notification_status.svg" alt="">
+               <p>문의</p>
+               <span>새 항목 <strong>0</strong>건</span>
+            </a>
+         </div>
+         <!--// top_link E -->
+         <!-- my_plan_wrap S -->
+         <div class="my_plan_wrap">
+            <!-- control_box S -->
+            <div class="control_box">
+               <div class="date_control">
+                  <div class="date_info">
+                     <button><img src="../01_app/images/icon_arrow_gray_left.svg" alt=""></button>
+                     <span>9월</span>
+                     <button><img src="../01_app/images/icon_arrow_gray_right.svg" alt=""></button>
+                  </div>
+                  <button class="btn_today">오늘</button>
+               </div>
+               <div class="time_control">
+                  <span class="time_info">
+                     <img src="../01_app/images/icon_minus_cirlce.svg" alt="">
+                     <strong>0시간</strong> /&nbsp; 한 달간의 총 지원 시간
+                  </span>
+                  <div class="time_tab">
+                     <button class="tab_list">list</button>
+                     <button class="tab_calendar active">calendar</button>
+                  </div>
+               </div>
+            </div>
+            <!--// control_box E -->
+            <!-- calender_list S -->
+            <div class="calender_list">
+               <table class="calender">
+                  <thead>
+                     <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">28</span>
+                           </div>   
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">29</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">30</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">31</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">1</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">2</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">3</span>
+                           </div>
+                        </td>
+                     </tr>  
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">4</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">5</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">6</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="today">
+                              <span class="service_date">7</span>
+                               <span class="service_time">오늘</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">8</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">9</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">10</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">11</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">12</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">13</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">14</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">15</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">16</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">17</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">18</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">19</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">20</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">21</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">22</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">23</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">24</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">25</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">26</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">27</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">28</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">29</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">30</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">1</span>
+                           </div>
+                        </td>
+                     </tr>
+               </table>
+            </div>
+            <!--// calender_list E -->
+         </div>
+         <!--// my_plan_wrap E -->
+      </div>
+      <!--// contents E -->
+      <nav>
+         <ul>
+            <li class="active">
+               <a href="#">
+                  <img src="../01_app/images/nav_icon01.svg" alt="">
+                  <p>내 일정</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon02.svg" alt="">
+                  <p>봉사신청</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon03.svg" alt="">
+                  <p>봉사보고</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon04.svg" alt="">
+                  <p>공지사항</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon05.svg" alt="">
+                  <p>설정</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</body>
+
+</html>
