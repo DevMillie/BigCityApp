@@ -72,5 +72,5 @@ input, textarea {
 .blind{overflow:hidden;position:absolute;left:-9999em;width:0 !important;height:0 !important;margin:0 !important;padding:0 !important;text-indent:-9999em;}
 
 /* ======= scrollbar style */
-body *::-webkit-scrollbar{width: .75rem;}
-body *::-webkit-scrollbar-thumb{width: .75rem; background: #ABB4C2; border: .25rem solid rgba(0, 0, 0, 0); border-radius: .75rem; background-clip: content-box;}
+body *::-webkit-scrollbar{width: 2px;}
+body *::-webkit-scrollbar-thumb{width: 2px; background: #ABB4C2; border: .25rem solid rgba(0, 0, 0, 0); border-radius: .75rem; background-clip: content-box;}

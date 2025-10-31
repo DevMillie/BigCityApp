@@ -177,3 +177,10 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .daliy_plan.today .plan_detail li .list_time span{color: #208FFF;}
 
 .calender_list{padding: 0 16px;}
+
+@media screen and (max-width: 360px) {
+   .top_link a{padding: 0 8px;}   
+}
+@media screen and (max-width: 320px) {
+   .top_link a{padding: 0 4px;}   
+}
