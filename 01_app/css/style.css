@@ -148,6 +148,7 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .plan_detail li{padding: 14px 16px; border-radius: 12px; background: #F8F8F8;}
 .plan_detail li + li{margin-top: 5px;}
 .plan_detail li a{display: inline-block; width: 100%; padding-left: 12px; padding-right: 30px; border-left: 2px solid #D4D4D4; background: url(../images/icon_plan_color.svg)no-repeat right center;}
+.plan_detail li a.none{background: none; color: #666;font-size: 15px;font-weight: 400;letter-spacing: -0.6px;}
 .plan_detail li .list_time{margin-bottom: 8px; color: #333;font-size: 16px;font-weight: 600;line-height: 18px;}
 .plan_detail li .list_time span{padding-right: 6px; color: #757575;font-size: 15px;font-weight: 600;letter-spacing: -0.6px;}
 .plan_detail li .list_people{color: #333;font-size: 15px;font-weight: 400;letter-spacing: -0.6px;}
