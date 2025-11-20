@@ -103,18 +103,24 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .profile_image > div{margin-left: -5px; width: 40px; height: 40px; border: 2px solid #fff; border-radius: 50%; overflow: hidden;}
 .profile_image > div > img{width: 100%;}
 
-
 /* 로그인 토스트 팝업 */
-.login_toast_modal{width: 90%; position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); border-radius: 200px;background: rgba(0, 0, 0, 0.60);display: flex;padding: 16px 26px;justify-content: space-between;align-items: center; gap: 17px;}
+.login_toast_modal{width: 90%; max-width: 600px; position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); border-radius: 200px;background: rgba(0, 0, 0, 0.60);display: flex;padding: 16px 26px;justify-content: space-between;align-items: center; gap: 17px; z-index: 10;}
 .login_toast_modal span{color: #FFF;font-size: 15px;font-weight: 400;line-height: 18px; /* 120% */letter-spacing: -0.15px;}
+
+/* 내부 토스트 팝업 */
+.toast_modal{width: 90%; max-width: 600px; position: absolute; bottom: 79px; left: 50%; transform: translateX(-50%); border-radius: 12px;background: rgba(62, 62, 62, 0.84);display: flex;padding: 16px;justify-content: space-between;align-items: center; gap: 17px; z-index: 10;}
+.toast_modal span{color: #FFF;font-size: 15px;font-weight: 400;line-height: 18px; /* 120% */letter-spacing: -0.15px;}
+.toast_modal span i{margin-right: 8px;}
 
 /* ========= icon */
 [class*="icon_"] {display: inline-block; vertical-align: middle; background-repeat: no-repeat; background-position: 50%; background-size: cover;}
 .icon_close_bl{background: url(../images/icon-close-bl.svg)no-repeat center;}
 .icon_close_w{background: url(../images/icon-close-w.svg)no-repeat center;}
+.icon_success{background: url(../images/icon_success.svg)no-repeat center;}
 
 /* ========= size */
 .size_16{width: 16px; height: 16px;}
+.size_20{width: 20px; height: 20px;}
 .size_24{width: 24px; height: 24px;}
 
 /* ========= header */

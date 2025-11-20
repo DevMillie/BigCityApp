@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>대도시앱</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/common.js"></script>
+</head>
+
+<body class="app_body">
+   <div class="wrap">
+      <!-- header S -->
+      <header>
+         <div class="header_info">
+            <div class="user_info">
+               <span class="user_badge">자원봉사자</span>
+               <span class="user_name"><strong>김아영 자매</strong> 서울수서 회중</span>
+            </div>
+            <div class="user_img">
+               <img src="../01_app/images/profile02.jpg" alt="">
+            </div>
+         </div>
+         <div class="header_bottom"></div>
+      </header>
+      <!--// header E -->
+      <!-- contents S -->
+      <div class="contents">
+         <!-- my_plan_wrap S -->
+         <div class="my_plan_wrap">
+            <!-- control_box S -->
+            <div class="control_box">
+               <div class="date_control">
+                  <div class="date_info">
+                     <button><img src="../01_app/images/icon_arrow_gray_left.svg" alt=""></button>
+                     <span>9월</span>
+                     <button><img src="../01_app/images/icon_arrow_gray_right.svg" alt=""></button>
+                  </div>
+                  <button class="btn_today">오늘</button>
+               </div>
+               <div class="time_control">
+                  <span class="time_info">
+                     <img src="../01_app/images/icon_minus_cirlce.svg" alt="">
+                     <strong>0시간</strong> /&nbsp; 한 달간의 총 지원 시간
+                  </span>
+                  <div class="time_tab">
+                     <button class="tab_list">list</button>
+                     <button class="tab_calendar active">calendar</button>
+                  </div>
+               </div>
+            </div>
+            <!--// control_box E -->
+            <!-- calender_list S -->
+            <div class="calender_list">
+               <table class="calender">
+                  <thead>
+                     <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">28</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">29</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">30</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">31</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">1</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">2</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">3</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">4</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">5</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">6</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="today">
+                              <span class="service_date">7</span>
+                              <span class="service_time">오늘</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">8</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">9</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">10</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">11</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">12</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">13</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">14</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">15</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">16</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">17</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">18</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">19</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">20</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">21</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">22</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">23</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">24</span>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div>
+                              <span class="service_date">25</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">26</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">27</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">28</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div>
+                              <span class="service_date">29</span>
+                           </div>
+                        </td>
+                        <td>
+                           <div class="on">
+                              <span class="service_date">30</span>
+                              <span class="service_time">2시간</span>
+                           </div>
+                        </td>
+                        <td class="not_m">
+                           <div>
+                              <span class="service_date">1</span>
+                           </div>
+                        </td>
+                     </tr>
+               </table>
+            </div>
+            <!--// calender_list E -->
+            <!-- place_tab S -->
+            <div class="place_tab">
+               <div class="tab_scroller">
+                  <ul>
+                     <li class="on"><a href="#">강남역</a></li>
+                     <li><a href="#">신논현역</a></li>
+                     <li><a href="#">고속터미널역</a></li>
+                     <li><a href="#">신사역</a></li>
+                     <li><a href="#">청담역</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!--// place_tab E -->
+            <!-- plan_list S -->
+            <div class="plan_list va_list">
+               <div class="daliy_plan today">
+                  <div class="va_info">
+                     <p class="plan_date">
+                        <span><strong>25</strong> <span>월</span></span>
+                        <span class="badge_today">오늘</span>
+                     </p>
+                     <p class="va_num">지원 가능한 타임이 3개 있어요</p>
+                  </div>
+                  <ul class="plan_detail">
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>양원규</span>
+                              </p>
+                           </p>
+                        </a>
+                        <button class="btn_va">지원하기</button>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>양원규</span>
+                                 <span>박상철</span>
+                                 <span>김상완</span>
+                              </p>
+                           </p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>김규식</span>
+                                 <span>박찬영</span>
+                              </p>
+                           </p>
+                        </a>
+                        <button class="btn_va">지원하기</button>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                              </p>
+                           </p>
+                        </a>
+                        <button class="btn_va">지원하기</button>
+                     </li>
+                  </ul>
+               </div>
+               <div class="daliy_plan">
+                  <div class="va_info">
+                     <p class="plan_date">
+                        <span><strong>26</strong> 화</span>
+                     </p>
+                     <p class="va_num">지원 가능한 타임이 1개 있어요</p>
+                  </div>
+                  <ul class="plan_detail">
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>양원규</span>
+                                 <span>김규식</span>
+                                 <span>박찬영</span>
+                              </p>
+                           </p>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>양원규</span>
+                                 <span>박찬영</span>
+                              </p>
+                           </p>
+                        </a>
+                        <button class="btn_va">지원하기</button>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="list_info">
+                              <p class="list_time">
+                                 <span>오전</span>11:00 - 12:00
+                              </p>
+                              <p class="list_people">
+                                 <span>김정기</span>
+                                 <span>양원규</span>
+                                 <span>김규식</span>
+                                 <span>박찬영</span>
+                              </p>
+                           </p>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- plan_list S -->
+         </div>
+         <!--// my_plan_wrap E -->
+      </div>
+      <!--// contents E -->
+      <!-- nav S -->
+      <nav>
+         <ul>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon01.svg" alt="">
+                  <p>내 일정</p>
+               </a>
+            </li>
+            <li class="active">
+               <a href="#">
+                  <img src="../01_app/images/nav_icon02.svg" alt="">
+                  <p>봉사신청</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon03.svg" alt="">
+                  <p>봉사보고</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon04.svg" alt="">
+                  <p>공지사항</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="../01_app/images/nav_icon05.svg" alt="">
+                  <p>설정</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <!--// nav E -->
+   </div>
+   <!-- 봉사신청 토스트 팝업 S -->
+   <div class="toast_modal">
+      <span><i class="icon_success size_20"></i>봉사 일정에 추가 되었습니다.</span>
+   </div>
+   <!--// 봉사신청 토스트 팝업 E -->
+</body>
+
+</html>
