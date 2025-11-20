@@ -31,6 +31,8 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 
 .btn_today{border-radius: 8px; background: #F1F1F1; height: 30px; padding: 4px 12px; font-size: 14px; font-weight: 500;letter-spacing: -0.56px; color: #222;}
 
+.btn_va{padding: 4px 8px; border-radius: 6px; border: 1px solid #208FFF; color: #208FFF; font-size: 13px;font-weight: 500; letter-spacing: -0.52px;}
+
 /* 팝업 버튼 */
 .modal_dialog.style01 .modal_footer .btn{height: 46px; text-align: center;font-size: 15px;font-weight: 700;letter-spacing: -0.6px;}
 .modal_dialog.style01 .modal_footer .btn.gray02{color: #24272C;}
@@ -47,6 +49,14 @@ input[type='password']:focus{border: 1px solid #3B3F47;}
 .time_tab button.tab_list.active{background:url(../images/icon_tab_on.svg) no-repeat center; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);}
 .time_tab button.tab_calendar{background:url(../images/icon_date_off.svg) no-repeat center;}
 .time_tab button.tab_calendar.active{background:url(../images/icon_date_on.svg) no-repeat center; filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.10));}
+
+/* ========= place_tab */
+.place_tab{margin-top: 40px; border-bottom: 1px solid #EDEDED; overflow: hidden;}
+.place_tab .tab_scroller{display: flex; justify-content: center;}
+.place_tab .tab_scroller ul{padding: 0 16px; display: flex; align-items: stretch; overflow-x: auto; white-space: nowrap;}
+.place_tab .tab_scroller ul::-webkit-scrollbar{display: none;}
+.place_tab .tab_scroller ul li a{display: block; border-bottom: 2px solid #fff; padding: 16px 20px; color: #5A5A5A;text-align: center;font-size: 16px;font-weight: 600;letter-spacing: -0.64px;}
+.place_tab .tab_scroller ul li.on a{color: #222; font-weight: 700; border-bottom: 2px solid #222;}
 
 /* ========= modal style */
 .modal_overlay{display: none; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 5000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.60);}
@@ -222,3 +232,21 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 @media screen and (max-width: 320px) {
    .top_link a{padding: 0 4px;}   
 }
+
+/* ========= 자원봉사 신청 */
+.plan_list.va_list{padding: 0 20px;}
+.va_list .daliy_plan:first-child{padding-top: 20px;}
+.va_list .daliy_plan .va_info{display: flex; align-items: center; justify-content: space-between;}
+.va_list .daliy_plan .va_info .plan_date span{display: flex; align-items: center; gap: 3px; line-height: normal;}
+.va_list .daliy_plan .va_info .plan_date span strong{font-size: 20px; font-weight: 700;}
+.va_list .daliy_plan.today .va_info .plan_date span{color: #208FFF;}
+.va_list .daliy_plan .va_info .va_num{padding-left: 20px; background: url(../images/icon_calendar_gray.svg)no-repeat left center; color: #757575;font-size: 14px;font-weight: 400;}
+
+.va_list .plan_detail{padding-left: 0;}
+.va_list .plan_detail li,
+.va_list .daliy_plan.today .plan_detail li{background: none;}
+.va_list .plan_detail li{padding: 14px 0;}
+.va_list .daliy_plan .plan_detail li{display: flex; align-items: center; justify-content: space-between;} 
+.va_list .daliy_plan .plan_detail li a{border-left: 4px solid #A1D0FF; background: none;}
+.va_list .daliy_plan.today .plan_detail li a{border-left: 4px solid #208FFF;}
+.va_list .plan_detail li .list_time span{color: #208FFF;}
