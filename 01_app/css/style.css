@@ -137,6 +137,7 @@ header .header_bottom{width: 100%; height: 16px; border-radius: 16px 16px 0 0; b
 header.has_title .header_bottom{height: auto; padding:24px 20px 12px 20px; display: flex; align-items: center; justify-content: space-between;}
 header .header_bottom .btn_back{width: 24px;height: 24px; background: url(../images/icon_arrow_bl_left.svg) no-repeat center;}
 header .header_bottom .btn_close{width: 24px;height: 24px; background: url(../images/icon_close_bl.svg) no-repeat center;}
+header .header_bottom h1{color:#202020;text-align: center;font-size: 18px;font-weight: 600;letter-spacing: -0.5px;}
 
 /* ========= nav */
 nav{width: 100%; z-index: 10; padding: 0 20px; position: absolute; bottom: 0; left: 0; background: #FFF; border-top: 1px solid #EAEAEA;}
@@ -309,3 +310,28 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .experiences_list ul li > div .ex_time{color: #222;font-size: 16px;font-weight: 400;}
 .experiences_list ul li > div .ex_time span{color: #208FFF;font-size: 14px;font-weight: 600; margin-right: 6px;}
 .experiences_list ul li > .btn_report{padding: 4px 8px; border-radius: 6px; border: 1px solid #208FFF; color: #208FFF;font-size: 13px;font-weight: 500;letter-spacing: -0.52px;}
+
+.report_detail_wrap{padding: 20px;}
+.report_info{padding: 20px; border-radius: 14px; background: #F2F4F6;}
+.report_info .experiences_date{color: #222;font-size: 15px;font-weight: 500;letter-spacing: -0.6px; margin-bottom: 16px;}
+.report_info .experiences_date b{font-size: 17px;font-weight: 600;letter-spacing: -0.68px;}
+.report_info .ex_place{padding-left: 30px; height: 20px; line-height: 20px; margin-bottom: 7px; color: #000;font-size: 17px;font-weight: 500; background: url(../images/icon_briefcase.svg) no-repeat left center; background-size: 20px;}
+.report_info .ex_time{padding-left: 30px; color: #000;font-size: 16px;font-weight: 400;}
+.report_info .ex_time span{color: #208FFF;font-size: 14px;font-weight: 600;letter-spacing: -0.56px; margin-right: 6px;}
+
+.report_detail_wrap h2{margin-top: 30px; margin-bottom: 14px; color: #757575;font-size: 17px;font-weight: 500;letter-spacing: -0.68px;}
+.publication_list li{padding: 20px 18px;border-radius: 14px;border: 1px solid #DDD; display: flex; align-items: center; justify-content: space-between;}
+.publication_list li + li{margin-top: 6px;}
+.publication_list li > span{color: #000;font-size: 17px;font-weight: 500;letter-spacing: -0.68px;}
+.publication_list li > div{display: flex; align-items: center; justify-content: space-between;}
+.publication_list li > div button{width: 24px; height: 24px;}
+.publication_list li > div .btn_minus{background: url(../images/icon-minus.svg) no-repeat center;}
+.publication_list li > div .btn_minus:disabled{background: url(../images/icon-minus-dis.svg) no-repeat center;}
+.publication_list li > div .btn_plus{background: url(../images/icon-plus.svg) no-repeat center;}
+.publication_list li > div span{display: inline-block; width: 57px; color: #000;text-align: center;font-size: 20px;font-weight: 500;letter-spacing: -0.8px;}
+
+.report_detail_wrap textarea{width: 100%; height: 152px; font-size: 15px; padding: 16px 18px;border-radius: 14px;border: 1px solid #DDD;background: #FFF; font-family: "Pretendard";}
+.report_detail_wrap textarea::placeholder{color: #000; opacity: 0.16; font-family: "Pretendard"; font-size: 16px;font-weight: 400;line-height: 150%; letter-spacing: 0.091px;}
+.report_detail_wrap textarea:focus{outline: none;}
+
+.btn_submit{margin-top: 40px; margin-bottom: 40px; width: 100%; padding: 14px; border-radius: 12px; background: #4157A5; color: #FFF;text-align: center;font-size: 17px;font-weight: 700;letter-spacing: -0.085px;}
