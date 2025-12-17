@@ -266,7 +266,7 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .notice_list li{padding: 20px;}
 .notice_list li a{display: inline-block; width: 100%;}
 .notice_list li a p{display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;}
-.notice_list li a p .noti_place{padding-left: 28px; background: url(../images/icon-notice-s.svg) no-repeat left center; color: #4157A5;font-size: 15px;font-weight: 500;letter-spacing: -0.6px;}
+.notice_list li a p .noti_place{padding-left: 28px; line-height: 20px; background: url(../images/icon-notice-s.svg) no-repeat left center; color: #4157A5;font-size: 15px;font-weight: 500;letter-spacing: -0.6px;}
 .notice_list li a p .noti_place.new{background: url(../images/icon-notice-s-new.svg)no-repeat left center;}
 .notice_list li a p .noti_date{color:#757575; font-size: 14px;font-weight: 400;letter-spacing: -0.56px;}
 .notice_list li a .noti_title{display: inline-block; padding-left: 28px; color: #222; word-break: break-all; font-size: 16px;font-weight: 500;line-height: 22px;letter-spacing: -0.64px; overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-line-clamp: 2;  -webkit-box-orient: vertical;}
