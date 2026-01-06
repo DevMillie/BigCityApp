@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>대도시앱</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/common.js"></script>
+</head>
+
+<body class="app_body">
+   <div class="wrap">
+      <!-- header S -->
+      <header>
+         <div class="header_info">
+            <div class="user_info">
+               <span class="user_badge">자원봉사자</span>
+               <span class="user_name"><strong>김아영 자매</strong> 서울수서 회중</span>
+            </div>
+            <div class="user_img">
+               <img src="../01_app/images/profile01.jpg" alt="">
+            </div>
+         </div>
+         <div class="header_bottom"></div>
+      </header>
+      <!--// header E -->
+      <!-- contents S -->
+      <div class="contents">
+         <h2 class="page_title">설정</h2>
+         <!-- settings_wrap S -->
+         <div class="settings_wrap">
+            <!-- profile section S -->
+            <div class="profile_section">
+               <div class="profile_image_wrap">
+                  <div class="profile_image_circle">
+                     <img src="../01_app/images/profile01.jpg" alt="프로필">
+                  </div>
+               </div>
+               <div class="profile_info">
+                  <p class="profile_name">전아영 자매</p>
+                  <p class="profile_church">서울수서 회중</p>
+               </div>
+            </div>
+            <!--// profile section E -->
+
+            <!-- settings menu S -->
+            <div class="settings_menu">
+               <ul class="settings_list">
+                  <li>
+                     <a href="#">
+                        <div class="menu_item">
+                           <img src="./images/icon_setting.svg" alt="" class="menu_icon">
+                           <span class="menu_text">내 정보 관리</span>
+                           <img src="./images/icon_arrow_gray2_right.svg" alt="" class="menu_arrow">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="menu_item">
+                           <img src="./images/icon_setting.svg" alt="" class="menu_icon">
+                           <span class="menu_text">고정 스케줄 신청</span>
+                           <img src="./images/icon_arrow_gray2_right.svg" alt="" class="menu_arrow">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="menu_item">
+                           <img src="./images/icon_setting.svg" alt="" class="menu_icon">
+                           <span class="menu_text">문의하기</span>
+                           <img src="./images/icon_arrow_gray2_right.svg" alt="" class="menu_arrow">
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="menu_item">
+                           <img src="./images/icon_language.svg" alt="" class="menu_icon">
+                           <span class="menu_text">언어 선택</span>
+                           <div class="menu_right">
+                              <span class="menu_value">한국어</span>
+                              <img src="./images/icon_arrow_gray2_right.svg" alt="" class="menu_arrow">
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#">
+                        <div class="menu_item">
+                           <img src="./images/icon_language.svg" alt="" class="menu_icon">
+                           <span class="menu_text">로그아웃</span>
+                           <img src="./images/icon_arrow_gray2_right.svg" alt="" class="menu_arrow">
+                        </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <!--// settings menu E -->
+
+            <!-- app version S -->
+            <div class="app_version">
+               <p>앱 버전<span>0.0.2</span></p>
+            </div>
+            <!--// app version E -->
+
+         </div>
+         <!--// settings_wrap E -->
+      </div>
+      <!--// contents E -->
+      <nav>
+         <ul>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon01.svg" alt="">
+                  <p>내 일정</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon02.svg" alt="">
+                  <p>봉사신청</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon03.svg" alt="">
+                  <p>봉사보고</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon04.svg" alt="">
+                  <p>공지사항</p>
+               </a>
+            </li>
+            <li class="active">
+               <a href="#">
+                  <img src="./images/nav_icon05.svg" alt="">
+                  <p>설정</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+   <!-- modal S -->
+   <div class="modal_overlay active">
+      <div class="modal_dialog">
+         <div class="modal_util">
+            <span>로그아웃</span>
+         </div>
+
+         <div class="modal_content login_pw_email">
+            <p class="modal_text_main">로그아웃 하시겠습니까?</p>
+         </div>
+
+         <div class="modal_footer">
+            <div class="btn_block center">
+               <button class="btn small gray">취소</button>
+               <button href="#none" class="btn small primary">확인</button>
+            </div>
+         </div>
+
+      </div>
+   </div>
+   <!--// modal E -->
+</body>
+
+</html>
