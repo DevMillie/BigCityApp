@@ -44,7 +44,21 @@
             <div class="form_group">
                <label for="">날짜를 선택해 주세요.</label>
                <input type="text" class="datepicker-here" name="기간" data-language='ko' placeholder="연도.월.일">
-            </div>            
+            </div>
+
+            <div class="form_group">
+               <label>방문 여부 선택</label>
+               <div class="radio_group">
+                  <label class="radio_option">
+                     <input type="radio" name="visit_status" value="request">
+                     <span class="radio_label">방문 요청</span>
+                  </label>
+                  <label class="radio_option">
+                     <input type="radio" name="visit_status" value="no_request" checked>
+                     <span class="radio_label">요청 안 함</span>
+                  </label>
+               </div>
+            </div>
 
             <h2>전달 사항</h2>
             <textarea name="" id="" placeholder="참고 해야 할 사항을 자세히 적어주세요.&#13;&#10;마음가짐, 느낀 점과 영향"></textarea>

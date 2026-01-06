@@ -342,3 +342,39 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 
 .report_detail_wrap .form_group label{color: #757575;font-size: 17px;font-weight: 500;letter-spacing: -0.68px;}
 .report_detail_wrap .form_group input{margin-top: 12px; color: #000;font-family: "Pretendard";font-size: 18px;font-weight: 400;}
+
+/* ========= radio button style */
+.report_detail_wrap .form_group + .form_group{margin-top: 30px;}
+.report_detail_wrap .radio_group{display: flex; gap: 8px; margin-top: 12px;}
+.report_detail_wrap .radio_option{flex: 1; position: relative; cursor: pointer;}
+.report_detail_wrap .radio_option input[type="radio"]{position: absolute; opacity: 0; width: 0; height: 0;}
+.report_detail_wrap .radio_option .radio_label{display: flex; align-items: center; justify-content: space-between; padding: 18px 16px; border-radius: 12px; border: 1px solid #E9E9E9; background: #FFF; color: #000; font-size: 16px; font-weight: 400; letter-spacing: -0.64px; transition: all 0.2s; position: relative;}
+.report_detail_wrap .radio_option input[type="radio"]:checked + .radio_label{border: 1px solid #4157A5;}
+.report_detail_wrap .radio_option .radio_label::after{content: ''; display: inline-block; width: 20px; height: 20px; border-radius: 50%; border: 2px solid #E9E9E9; background: #FFF; margin-left: 8px; transition: all 0.2s; flex-shrink: 0;}
+.report_detail_wrap .radio_option input[type="radio"]:checked + .radio_label::after{border: 2px solid #4157A5; background: #4157A5; background-image: radial-gradient(circle, #FFF 0%, #FFF 30%, transparent 30%, transparent 100%);}
+
+/* ========= 설정 페이지 */
+.settings_wrap{padding: 0 20px;}
+.settings_wrap .page_title{margin-bottom: 30px;}
+
+.profile_section{display: flex; flex-direction: column; align-items: center; padding: 30px 0;}
+.profile_image_wrap{margin-bottom: 10px;}
+.profile_image_circle{width: 72px; height: 72px; border-radius: 50%; border: 2px solid #F5F5F5; background: #FFF; display: flex; align-items: center; justify-content: center; overflow: hidden;}
+.profile_image_circle img{width: 100%; height: 100%; object-fit: contain;}
+.profile_info{text-align: center;}
+.profile_name{color: #000; font-size: 20px; font-weight: 600; letter-spacing: -0.8px; margin-bottom: 4px;}
+.profile_church{color: #4157A5; font-size: 15px; font-weight: 500; line-height: 18px; letter-spacing: -0.6px;}
+
+.settings_list{list-style: none; padding: 0; margin: 0;}
+.settings_list li{border-bottom: 1px solid #F0F0F0;}
+.settings_list li a{display: block; padding: 20px 0; text-decoration: none;}
+.menu_item{display: flex; align-items: center; justify-content: space-between;}
+.menu_icon{width: 24px; height: 24px; margin-right: 12px; flex-shrink: 0;}
+.menu_text{flex: 1; color: #333; font-size: 16px; font-weight: 600; line-height: 18px; letter-spacing: -0.64px; text-align: left;}
+.menu_arrow{width: 20px; height: 20px; flex-shrink: 0;}
+.menu_right{display: flex; align-items: center; gap: 8px;}
+.menu_value{color: #4157A5; font-size: 15px; font-weight: 600;letter-spacing: -0.6px;}
+
+.app_version{text-align: left; padding: 20px 0;}
+.app_version p{color: #8C8C8C; font-size: 16px; font-weight: 500; line-height: 18px; letter-spacing: -0.64px;}
+.app_version p span{font-weight: 400; padding-left:6px;}
