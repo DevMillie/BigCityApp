@@ -317,12 +317,12 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .experiences_list ul li > .btn_report:disabled{border: 1px solid #B3B3B3; color: #B3B3B3;}
 
 .report_detail_wrap{padding: 20px;}
-.report_info{padding: 20px; border-radius: 14px; background: #F2F4F6;}
-.report_info .experiences_date{color: #222;font-size: 15px;font-weight: 500;letter-spacing: -0.6px; margin-bottom: 16px;}
-.report_info .experiences_date b{font-size: 17px;font-weight: 600;letter-spacing: -0.68px;}
-.report_info .ex_place{padding-left: 30px; height: 20px; line-height: 20px; margin-bottom: 7px; color: #000;font-size: 17px;font-weight: 500; background: url(../images/icon_briefcase.svg) no-repeat left center; background-size: 20px;}
-.report_info .ex_time{padding-left: 30px; color: #000;font-size: 16px;font-weight: 400;}
-.report_info .ex_time span{color: #208FFF;font-size: 14px;font-weight: 600;letter-spacing: -0.56px; margin-right: 6px;}
+.report_date{color: #222;font-size: 17px;font-weight: 500;letter-spacing: -0.8px; margin-bottom: 16px;}
+.report_date b{font-size: 20px;font-weight: 600; vertical-align: text-bottom;}
+.report_info{padding: 18px 20px; border-radius: 12px; background: #F2F4F6; margin-bottom: 30px;}
+.report_info .ex_place{color: #000;font-size: 17px;font-weight: 500;letter-spacing: -0.68px; margin-bottom: 8px;}
+.report_info .ex_time{color: #000;font-size: 16px;font-weight: 400;letter-spacing: -0.64px;}
+.report_info .ex_time span{color: #208FFF;font-size: 16px;font-weight: 600;letter-spacing: -0.64px; margin-right: 5px;}
 
 .report_detail_wrap h2{margin-top: 30px; margin-bottom: 14px; color: #757575;font-size: 17px;font-weight: 500;letter-spacing: -0.68px;}
 .publication_list li{padding: 20px 18px;border-radius: 14px;border: 1px solid #DDD; display: flex; align-items: center; justify-content: space-between;}
