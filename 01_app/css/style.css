@@ -411,7 +411,7 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .change_phone_wrap .phone_input:focus{border: 1px solid #3B3F47;}
 .change_phone_wrap .phone_input:read-only{border-radius: 14px; border: 1px solid #EDF0F4; background: #F9FAFB;color: #888;  font-size: 17px; font-weight: 400;}
 .change_phone_wrap .phone_input::placeholder{color: #B4BBC9;}
-.bottom_fixed{position: absolute; width: calc(100% - 40px); bottom: 40px;}
+/* .bottom_fixed{position: absolute; width: calc(100% - 40px); bottom: 40px;} */
 
 /* ========= 언어 선택 페이지 */
 .language_wrap{padding: 20px;}
