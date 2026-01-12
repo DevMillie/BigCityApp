@@ -401,3 +401,14 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .btn_change{padding: 4px 10px; border-radius: 50px; border: 1px solid #4157A5; background: #FFF; color: #4157A5; font-size: 14px; font-weight: 500; letter-spacing: -0.56px; cursor: pointer; flex-shrink: 0;}
 
 .btn_info_submit{width: 100%; padding: 14px; background: #fff; color: #4157A5; text-align: center; font-size: 16px; font-weight: 600; letter-spacing: -0.08px; border-radius: 12px; border: 1px solid #4157A5;}
+
+/* ========= 전화번호 변경 페이지 */
+.change_phone_wrap{padding: 20px; position: relative; height: 100%;}
+.change_phone_guide{color:#202020; font-size: 20px; font-weight: 600; line-height: 28px; /* 140% */ letter-spacing: -0.5px; margin-bottom: 20px;}
+.change_phone_wrap .form_group{margin-bottom: 30px;}
+.change_phone_wrap .form_group label{display: block; color: #555; font-size: 15px; font-weight: 500; letter-spacing: -0.6px; margin-bottom: 10px;}
+.change_phone_wrap .phone_input{width: 100%; padding: 18px 16px; border-radius: 12px; border: 1px solid #E9E9E9; background: #FFF; color: #222;font-family: "Pretendard";font-size: 16px;font-weight: 400;letter-spacing: -0.64px; outline: none;}
+.change_phone_wrap .phone_input:focus{border: 1px solid #3B3F47;}
+.change_phone_wrap .phone_input:read-only{border-radius: 14px; border: 1px solid #EDF0F4; background: #F9FAFB;color: #888;  font-size: 17px; font-weight: 400;}
+.change_phone_wrap .phone_input::placeholder{color: #B4BBC9;}
+.bottom_fixed{position: absolute; width: calc(100% - 40px); bottom: 40px;}
