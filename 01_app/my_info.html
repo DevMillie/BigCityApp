@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>대도시앱</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/common.js"></script>
+</head>
+
+<body class="app_body">
+   <div class="wrap">
+      <!-- header S -->
+      <header class="has_title">
+         <div class="header_info">
+            <div class="user_info">
+               <span class="user_badge">자원봉사자</span>
+               <span class="user_name"><strong>김아영 자매</strong> 서울수서 회중</span>
+            </div>
+            <div class="user_img">
+               <img src="./images/profile01.jpg" alt="">
+            </div>
+         </div>
+         <!-- fix 헤더 있을 때 -->
+         <div class="header_bottom">
+            <button class="btn_back"></button>
+            <h1>내 정보 관리</h1>
+            <button class="btn_close"></button>
+         </div>
+         <!--// fix 헤더 있을 때 -->
+      </header>
+      <!--// header E -->
+      <!-- contents S -->
+      <div class="contents">
+         <!-- my_info_wrap S -->
+         <div class="my_info_wrap">
+            <!-- profile photo section S -->
+            <div class="profile_photo_section">
+               <div class="profile_photo_circle">
+                  <img src="./images/profile01.jpg" alt="">
+               </div>
+               <button class="btn_profile_change">프로필 사진 변경</button>
+            </div>
+            <!--// profile photo section E -->
+
+            <!-- info list S -->
+            <div class="info_list">
+               <div class="info_item">
+                  <span class="info_label">이름</span>
+                  <span class="info_value">김아영</span>
+               </div>
+               <div class="info_item">
+                  <span class="info_label">회중</span>
+                  <span class="info_value">서울수서 회중</span>
+               </div>
+               <div class="info_item">
+                  <span class="info_label">전화번호</span>
+                  <div class="info_right">
+                     <span class="info_value">010-2312-1234</span>
+                     <button class="btn_change">변경</button>
+                  </div>
+               </div>
+               <div class="info_item">
+                  <span class="info_label">이메일 주소</span>
+                  <div class="info_right">
+                     <span class="info_value data_none">이메일 주소를 등록해주세요</span>
+                     <button class="btn_change">등록</button>
+                  </div>
+               </div>
+            </div>
+            <!--// info list E -->
+
+            <!-- submit button S -->
+            <button class="btn_info_submit">내 정보 변경하기</button>
+            <!--// submit button E -->
+
+         </div>
+         <!--// my_info_wrap E -->
+      </div>
+      <!--// contents E -->
+      <nav>
+         <ul>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon01.svg" alt="">
+                  <p>내 일정</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon02.svg" alt="">
+                  <p>봉사신청</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon03.svg" alt="">
+                  <p>봉사보고</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon04.svg" alt="">
+                  <p>공지사항</p>
+               </a>
+            </li>
+            <li class="active">
+               <a href="#">
+                  <img src="./images/nav_icon05.svg" alt="">
+                  <p>설정</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</body>
+
+</html>

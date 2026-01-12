@@ -379,3 +379,25 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .app_version{text-align: left; padding: 20px 0;}
 .app_version p{color: #8C8C8C; font-size: 16px; font-weight: 500; line-height: 18px; letter-spacing: -0.64px;}
 .app_version p span{font-weight: 400; padding-left:6px;}
+
+/* ========= 내 정보 관리 페이지 */
+.my_info_wrap{padding: 0 20px 40px 20px;}
+
+.profile_photo_section{display: flex; flex-direction: column; align-items: center; padding: 30px 0 20px;}
+.profile_photo_circle{width: 72px; height: 72px; border-radius: 50%; border: 2px solid #E9E9E9; background: #FFF; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 14px;}
+.profile_photo_circle img{width: 80px; height: 80px; object-fit: contain;}
+.btn_profile_change{padding: 7px 10px; border-radius: 6px; background: #F2F2F2; color: #515151;font-size: 14px;font-weight: 500;letter-spacing: -0.6px; border: none; cursor: pointer;}
+
+.info_list{margin-bottom: 40px;}
+.info_item{display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #F0F0F0;}
+.info_item:last-child{border-bottom: none;}
+.info_label{color: #333; font-size: 16px; font-weight: 600;  line-height: 18px; /* 112.5% */   letter-spacing: -0.64px;}
+.info_value{color: #333; font-size: 15px; font-weight: 400;letter-spacing: -0.6px;}
+.info_value.data_none{color: #888;}
+.info_right{display: flex; align-items: center; gap: 8px; flex: 1; justify-content: flex-end;}
+.info_input{flex: 1; max-width: 200px; padding: 0; border: 0; outline: 0; background: transparent; color: #B4BBC9;font-size: 17px;font-weight: 400;letter-spacing: -0.68px; text-align: right;}
+.info_input::placeholder{color: #B4BBC9;}
+.info_input:focus{color: #222;}
+.btn_change{padding: 4px 10px; border-radius: 50px; border: 1px solid #4157A5; background: #FFF; color: #4157A5; font-size: 14px; font-weight: 500; letter-spacing: -0.56px; cursor: pointer; flex-shrink: 0;}
+
+.btn_info_submit{width: 100%; padding: 14px; background: #fff; color: #4157A5; text-align: center; font-size: 16px; font-weight: 600; letter-spacing: -0.08px; border-radius: 12px; border: 1px solid #4157A5;}
