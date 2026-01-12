@@ -404,7 +404,7 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 
 /* ========= 전화번호 변경 페이지 */
 .change_phone_wrap{padding: 20px; position: relative; height: 100%;}
-.change_phone_guide{color:#202020; font-size: 20px; font-weight: 600; line-height: 28px; /* 140% */ letter-spacing: -0.5px; margin-bottom: 20px;}
+.change_guide{color:#202020; font-size: 20px; font-weight: 600; line-height: 28px; /* 140% */ letter-spacing: -0.5px; margin-bottom: 20px;}
 .change_phone_wrap .form_group{margin-bottom: 30px;}
 .change_phone_wrap .form_group label{display: block; color: #555; font-size: 15px; font-weight: 500; letter-spacing: -0.6px; margin-bottom: 10px;}
 .change_phone_wrap .phone_input{width: 100%; padding: 18px 16px; border-radius: 12px; border: 1px solid #E9E9E9; background: #FFF; color: #222;font-family: "Pretendard";font-size: 16px;font-weight: 400;letter-spacing: -0.64px; outline: none;}
@@ -412,3 +412,17 @@ nav ul li a p{font-size: 12px; font-weight: 500; color: #333;}
 .change_phone_wrap .phone_input:read-only{border-radius: 14px; border: 1px solid #EDF0F4; background: #F9FAFB;color: #888;  font-size: 17px; font-weight: 400;}
 .change_phone_wrap .phone_input::placeholder{color: #B4BBC9;}
 .bottom_fixed{position: absolute; width: calc(100% - 40px); bottom: 40px;}
+
+/* ========= 언어 선택 페이지 */
+.language_wrap{padding: 20px;}
+.language_list{list-style: none; padding: 0; margin: 0;}
+.language_list li + li{margin-top: 12px;}
+.language_option{display: block;}
+.language_option input[type="radio"]{position: absolute; opacity: 0; width: 0; height: 0;}
+.language_card{display: flex; align-items: center; justify-content: space-between; padding: 18px 16px; border-radius: 12px; border: 1px solid #E5E5E5; background: #FFF; transition: all 0.2s;}
+.language_card .language_text{color: #000;font-size: 17px;font-weight: 500;letter-spacing: -0.68px;}
+.language_card .language_radio{width: 20px; height: 20px; border-radius: 50%; border: 2px solid #DADADA; background: #FFF; flex-shrink: 0; transition: all 0.2s;}
+.language_option input[type="radio"]:checked + .language_card{border: 1px solid #4157A5;}
+.language_option input[type="radio"]:checked + .language_card .language_radio{border: 2px solid #4157A5; background: #4157A5; background-image: radial-gradient(circle, #FFF 0%, #FFF 35%, transparent 35%, transparent 100%);}
+
+.btn_language_confirm{width: 100%; padding: 14px; border-radius: 12px; background: #4157A5; color: #FFF;text-align: center;font-size: 17px;font-weight: 700;letter-spacing: -0.085px; border: none; cursor: pointer; margin-top: 40px; margin-bottom: 40px;}

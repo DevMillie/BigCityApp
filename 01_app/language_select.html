@@ -24,35 +24,54 @@
                <img src="./images/profile01.jpg" alt="">
             </div>
          </div>
-         <!-- fix 헤더 있을 때 -->
          <div class="header_bottom">
             <button class="btn_back"></button>
+            <h1>언어선택</h1>
+            <button class="btn_close"></button>
          </div>
-         <!--// fix 헤더 있을 때 -->
       </header>
       <!--// header E -->
+
       <!-- contents S -->
       <div class="contents">
-         <!-- change_phone_wrap S -->
-         <div class="change_phone_wrap">
-            <p class="change_guide">변경할 이메일 주소를<br>등록해주세요.</p>
+         <div class="language_wrap">
+            <p class="change_guide">사용하실 언어를 선택해주세요.</p>
 
-            <div class="form_group">
-               <label>현재 이메일 주소</label>
-               <input type="text" class="phone_input" value="eqwfwefw@gmail.com" readonly>
-            </div>
+            <ul class="language_list">
+               <li>
+                  <label class="language_option">
+                     <input type="radio" name="language" value="korean">
+                     <div class="language_card">
+                        <span class="language_text">한국어</span>
+                        <span class="language_radio"></span>
+                     </div>
+                  </label>
+               </li>
+               <li>
+                  <label class="language_option">
+                     <input type="radio" name="language" value="chinese" checked>
+                     <div class="language_card">
+                        <span class="language_text">중국어</span>
+                        <span class="language_radio"></span>
+                     </div>
+                  </label>
+               </li>
+               <li>
+                  <label class="language_option">
+                     <input type="radio" name="language" value="english">
+                     <div class="language_card">
+                        <span class="language_text">영어</span>
+                        <span class="language_radio"></span>
+                     </div>
+                  </label>
+               </li>
+            </ul>
 
-            <div class="form_group">
-               <label>변경할 이메일 주소</label>
-               <input type="text" class="phone_input" placeholder="변경할 이메일 주소를 입력해주세요">
-            </div>
-
-            <button class="btn_info_submit bottom_fixed">이메일 주소 변경하기</button>
-
+            <button class="btn_language_confirm">확인</button>
          </div>
-         <!--// change_phone_wrap E -->
       </div>
       <!--// contents E -->
+
       <nav>
          <ul>
             <li>
