@@ -574,3 +574,8 @@ header.has_title .header_bottom .header_spacer{width: 24px; height: 24px; displa
    font-weight: 400;
    letter-spacing: -0.56px;
 }
+
+.answer_box{padding: 20px;}
+.answer_info{border-radius: 16px; border: 1px solid rgba(0, 0, 0, 0.01); background: #F7FAFF; padding: 16px;}
+.answer_title{color: #4157A5; font-size: 15px; font-weight: 500; letter-spacing: -0.6px; margin-bottom: 10px;}
+.answer_text{color: #303030; font-size: 14px; font-weight: 500; letter-spacing: -0.64px; line-height: 20px;}
