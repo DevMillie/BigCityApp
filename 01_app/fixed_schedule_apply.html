@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <title>대도시앱</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+   <script src="./js/jquery-3.7.1.min.js"></script>
+   <script src="./js/jquery-ui.min.js"></script>
+   <script src="./js/common.js"></script>
+</head>
+
+<body class="app_body">
+   <div class="wrap">
+      <!-- header S -->
+      <header class="has_title">
+         <div class="header_info">
+            <div class="user_info">
+               <span class="user_badge">자원봉사자</span>
+               <span class="user_name"><strong>김아영 자매</strong> 서울수서 회중</span>
+            </div>
+            <div class="user_img">
+               <img src="./images/profile01.jpg" alt="">
+            </div>
+         </div>
+         <!-- fix 헤더 있을 때 -->
+         <div class="header_bottom">
+            <button class="btn_back"></button>
+            <h1>고정 스케줄 신청</h1>
+            <span class="header_spacer" aria-hidden="true"></span>
+         </div>
+         <!--// fix 헤더 있을 때 -->
+      </header>
+      <!--// header E -->
+
+      <!-- contents S -->
+      <div class="contents">
+         <div class="fixed_schedule_wrap">
+            <p class="change_guide">기간 내 가능한 스케줄을<br>신청해주세요.</p>
+
+            <div class="form_group">
+               <label class="field_label">지원 장소</label>
+               <select class="select_input" aria-label="지원 장소" required>
+                  <option value="" selected disabled>장소를 선택해주세요.</option>
+                  <option value="gangnam">강남역</option>
+                  <option value="sinnonhyeon">신논현역</option>
+                  <option value="express">고속터미널역</option>
+                  <option value="sinsa">신사역</option>
+                  <option value="cheongdam">청담역</option>
+               </select>
+            </div>
+
+            <div class="form_group">
+               <label class="field_label">지원 요일</label>
+               <select class="select_input" aria-label="지원 요일" required>
+                  <option value="" selected disabled>요일을 선택해주세요.</option>
+                  <option value="mon">월요일</option>
+                  <option value="tue">화요일</option>
+                  <option value="wed">수요일</option>
+                  <option value="thu">목요일</option>
+                  <option value="fri">금요일</option>
+                  <option value="sat">토요일</option>
+                  <option value="sun">일요일</option>
+               </select>
+            </div>
+
+            <div class="form_group">
+               <div class="field_label_row">
+                  <label class="field_label">지원 시간</label>
+                  <span class="field_hint">(지원 가능한 시간을 모두 선택해주세요)</span>
+               </div>
+
+               <ul class="time_select_list">
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_08_09" name="time" value="08-09">
+                     <label class="time_select_item" for="time_08_09">
+                        <span class="time_text">오전&nbsp;&nbsp;08:00 - 09:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_09_10" name="time" value="09-10">
+                     <label class="time_select_item" for="time_09_10">
+                        <span class="time_text">오전&nbsp;&nbsp;09:00 - 10:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_10_11" name="time" value="10-11">
+                     <label class="time_select_item" for="time_10_11">
+                        <span class="time_text">오전&nbsp;&nbsp;10:00 - 11:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_11_12" name="time" value="11-12" checked>
+                     <label class="time_select_item" for="time_11_12">
+                        <span class="time_text">오전&nbsp;&nbsp;11:00 - 12:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_13_14" name="time" value="13-14" checked>
+                     <label class="time_select_item" for="time_13_14">
+                        <span class="time_text">오후&nbsp;&nbsp;13:00 - 14:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_14_15" name="time" value="14-15" checked>
+                     <label class="time_select_item" for="time_14_15">
+                        <span class="time_text">오후&nbsp;&nbsp;14:00 - 15:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_15_16" name="time" value="15-16">
+                     <label class="time_select_item" for="time_15_16">
+                        <span class="time_text">오후&nbsp;&nbsp;15:00 - 16:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_16_17" name="time" value="16-17">
+                     <label class="time_select_item" for="time_16_17">
+                        <span class="time_text">오후&nbsp;&nbsp;16:00 - 17:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_17_18" name="time" value="17-18">
+                     <label class="time_select_item" for="time_17_18">
+                        <span class="time_text">오후&nbsp;&nbsp;17:00 - 18:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_18_19" name="time" value="18-19">
+                     <label class="time_select_item" for="time_18_19">
+                        <span class="time_text">오후&nbsp;&nbsp;18:00 - 19:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_19_20" name="time" value="19-20">
+                     <label class="time_select_item" for="time_19_20">
+                        <span class="time_text">오후&nbsp;&nbsp;19:00 - 20:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+                  <li>
+                     <input class="time_select_input" type="checkbox" id="time_20_21" name="time" value="20-21">
+                     <label class="time_select_item" for="time_20_21">
+                        <span class="time_text">오후&nbsp;&nbsp;20:00 - 21:00</span>
+                        <span class="time_check" aria-hidden="true"></span>
+                     </label>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="fixed_action_bar">
+            <button class="btn large primary">봉사 신청하기</button>
+         </div>
+      </div>
+      <!--// contents E -->
+
+      <!-- nav S -->
+      <nav>
+         <ul>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon01.svg" alt="">
+                  <p>내 일정</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon02.svg" alt="">
+                  <p>봉사신청</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon03.svg" alt="">
+                  <p>봉사보고</p>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src="./images/nav_icon04.svg" alt="">
+                  <p>공지사항</p>
+               </a>
+            </li>
+            <li class="active">
+               <a href="./settings.html">
+                  <img src="./images/nav_icon05.svg" alt="">
+                  <p>설정</p>
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <!--// nav E -->
+   </div>
+</body>
+
+</html>
